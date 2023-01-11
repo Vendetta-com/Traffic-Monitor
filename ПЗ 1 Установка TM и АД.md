@@ -1,5 +1,6 @@
 # Traffic-Monitor
 # ПЗ 1 Установка TM и АД
+https://youtu.be/zmpi4cYk0g0
 1. Установка CentOS и Traffic Monitor
 1.	При создании ВМ с CentOS задать 8 ядер, 8 гб ОЗУ и 600 гб дискового пространства thin provision. При установке разметить диск в режиме Standard Partition:
 Раздел "/" - 100 gib
