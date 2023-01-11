@@ -23,6 +23,7 @@
 1.	Установить InfoWatch, выбрать БД PostgreSQL
 
 ![image](https://user-images.githubusercontent.com/83372679/211777966-46399968-9a5a-487d-b923-4bcf155340d9.png)
+
 2.	 Сервер БД localhost – ссылаемся на то что postgres установлен на этой же машине, порт указывается по дефолту в postgres (5432) ,имя бд любое, имя пользователя postgres, пароль тот что задавали при установке postgres.
 
 ![image](https://user-images.githubusercontent.com/83372679/211777989-f56ac0a7-24b6-46ed-ab82-30ababbe1ad9.png)
