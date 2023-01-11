@@ -21,13 +21,16 @@ https://youtu.be/zmpi4cYk0g0
 Если IP, шлюз и DNS, hostname не были заданы при установке CentOS, то надо проделать следующие действия
 4.	Через vi отредактировать файл   
 ![image](https://user-images.githubusercontent.com/83372679/211776002-c05dfe33-1e53-4ad8-8f8e-8bb46b73f5e5.png)
+
 /ens192 – адаптер demo
 ![image](https://user-images.githubusercontent.com/83372679/211776030-856586f2-e2b3-4407-b086-ade06ce207dc.png)
+
 В /etc/hostname задать название iwtm
 
 Установка Traffic Monitor
 Проверить чтобы /etc/hosts  выглядел так: свой ip – iwtm, ip IW-DEMO-AD – demolab (имя домена)
  ![image](https://user-images.githubusercontent.com/83372679/211776169-ba421d9c-c240-4d1f-a87d-52c91b204991.png)
+
 /Управление редактором VI – INSERT (править текст), ESC (выйти из мода правки), ctrl+С (выход), :wq (w-сохранить, q-выйти) или же :q! (когда надо выйти без сохранения)
 5.	После внесения изменений перезагрузить ВМ, чтобы настройки применились
 6.	Установить редактор нано yum -y install nano (он удобнее)
@@ -35,6 +38,7 @@ https://youtu.be/zmpi4cYk0g0
 8.	Создать директорию через mkdir tm и подключить к ней диск командой mount /dev/cdrom tm
 9.	Перейти в каталог cd tm/TM/RHEL и запустить установку ./itwm-in (tab)
  ![image](https://user-images.githubusercontent.com/83372679/211776204-9b05ad3c-0360-4618-af1e-85d48a2bf7d1.png)
+
 //Если будут ошибки, надо проверить связь с 8.8.8.8 и ya.ru, если нет сети, проверить корректность настроек интернета, если всё также не воркает, переустанавливать в точном порядке, как описано.
 10.	После распаковки в настройках выбрать SQL – PostgresSQL, версия All - in - One  Entreprise, Server NTP выбрать manual и ввести ntp1.stratum2.ru, дальше со всем соглашаться.
 /Для выбора надо нажать пробел
@@ -46,6 +50,7 @@ https://youtu.be/zmpi4cYk0g0
 
 Далее со всем соглашаться
 11.	После установки зайти через IP второго интерфейса с хрома на основной машине, и проверить доступность сайта. 
+ 
  ![image](https://user-images.githubusercontent.com/83372679/211776355-fcd4025b-9d6a-4762-8996-639366b7b168.png)
 
 /login: officer password: xxXX1234
@@ -53,10 +58,13 @@ https://youtu.be/zmpi4cYk0g0
 
 Опциональная инфа для того чтобы поднять доступ к интернету через NAT (по идее должно быть настроено за тебя)
 12.	На IW-DEMO-AD добавить роль сервера «удаленный доступ», далее «маршрутизация»
+ 
  ![image](https://user-images.githubusercontent.com/83372679/211776400-3de15ce9-99d4-4bcd-a440-f6fb71ccde38.png)
 
 13.	Затем средства -> маршрутизация и удаленный доступ, запустить DEMOLAB (в первый раз не появится IP-адресов, отменить, во второй раз выбрать внешний IP, который глядит в интернет)
+ 
  ![image](https://user-images.githubusercontent.com/83372679/211776427-7d7f533e-f715-4e7d-a808-952df6701ece.png)
 
 14.	Добавить интерфейс, глядящий в интернет в пункте «преобразование сетевых адресов»
+ 
  ![image](https://user-images.githubusercontent.com/83372679/211776448-df83e4b0-7508-42e6-aafa-d2013e478cee.png)
