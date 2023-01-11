@@ -23,6 +23,7 @@ https://youtu.be/zmpi4cYk0g0
 ![image](https://user-images.githubusercontent.com/83372679/211776002-c05dfe33-1e53-4ad8-8f8e-8bb46b73f5e5.png)
 
 /ens192 – адаптер demo
+
 ![image](https://user-images.githubusercontent.com/83372679/211776030-856586f2-e2b3-4407-b086-ade06ce207dc.png)
 
 В /etc/hostname задать название iwtm
